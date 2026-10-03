@@ -50,5 +50,4 @@ Never share your seed phrase, private key, or wallet credentials with anyone.
 
 
 
-https://github.com/user-attachments/assets/f24cc4a5-cd46-437e-bf57-2993df35480e
 
