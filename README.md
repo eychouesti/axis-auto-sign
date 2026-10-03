@@ -1,37 +1,54 @@
-# Axis Auto Sign
+## Axis Auto Sign v1.5.11
 
-A lightweight browser extension for Axis Robotics Hub.
+Little Hub has been updated for the new Axis Hub History layout.
 
-## Features
+### What's new
 
-- Automatically signs available unsigned tasks
-- Detects duplicate tasks and prevents signing them twice
-- Pauses signing when gas fees are too high
-- Automatically navigates between pages
-- Failed-task retry system
-- Adjustable signing delay
-- UI designed for Axis Robotics
-- Banana Easter egg after 100 successful signs 🍌
+- Supports the new mixed History table without the old Unsigned dropdown
+- Starts from page 1 and uses individual Sign buttons across History pages
+- Does not use Hub's new "Sign all" button, preserving per-transaction gas protection
+- Skips rows without a reliable attempt ID
+- Legacy Unsigned layout is still supported
 
-## Goal
+### Progress
 
-The goal is to help Axis users sign their tasks smoothly while reducing unnecessary gas spending.
+- Epoch points
+- Trajectories
+- Unique task count
+- Average score
+- Epoch start/end dates and remaining time
+- Account-scoped history cache
+- Fast current-epoch Scan
+- Full Scan when a complete history refresh is needed
 
-## Installation
+### Signing & protection
 
-1. Download the latest release ZIP.
-2. Extract the ZIP to a folder.
-3. Open `chrome://extensions`.
-4. Enable **Developer mode**.
-5. Click **Load unpacked**.
-6. Select the extracted extension folder.
-7. Open Axis Hub and start the extension.
+- Automatic task signing
+- Duplicate-sign protection
+- Failed-sign retry
+- $0.01 gas protection
+- Live Signed / Unsigned / Pending / Failed counters
+- Adjustable delay: 1.7s / 2s / 2.5s / Custom
+- Background Hub tab targeting
 
-## Important
+### Updating from an older version
 
-Only download releases from this official repository.
-Never share your seed phrase or private key with anyone.
+Do not remove the existing extension if you want to preserve your local ledgers and counters.
 
-## Status
+1. Stop signing and wait for the current transaction to finish.
+2. Extract the new ZIP.
+3. Replace the files inside your existing extension folder.
+4. Open `chrome://extensions` or `brave://extensions`.
+5. Click Reload on Little Hub.
+6. Reload the Axis Hub tab once.
 
-Chrome Web Store version is planned.
+### Notes
+
+This is an unofficial community tool for Axis Robotics Hub.
+
+Never share your seed phrase, private key, or wallet credentials with anyone.
+
+
+
+https://github.com/user-attachments/assets/f24cc4a5-cd46-437e-bf57-2993df35480e
+
